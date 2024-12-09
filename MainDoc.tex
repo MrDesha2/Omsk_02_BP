@@ -1,0 +1,109 @@
+\input{head.tex}
+\def \notincludehead{}
+%\newcommand*{\No}{\textnumero}
+
+\input{names}
+
+
+\begin{document}
+
+	% титульный лист 
+ 	\maketitle
+
+	% содержание ЕСКД
+% 	\input{contents_eskd.tex}
+%  	\newpage
+
+	% оглавление 
+	\scriptsize
+	\setcounter{tocdepth}{4}
+	\tableofcontents
+	\normalsize
+	\newpage
+
+ 	\input{agreement.tex}
+ 	
+ 	\input{change_eskd.tex} 	
+ 	
+ 	\newpage
+ 	
+ 	
+ \section*{Словарь терминов и сокращений}
+\noindent
+
+\begin{tabular}{l l}
+% {\bf ОКК}  & --- Отдел контроля качества.\\
+% {\bf ППО}  & --- Планово-производственный отдел.\\
+{\bf г/к}, {\bf ГК}  & --- Гофрокартон.\\
+{\bf ГП}  & --- Готовая продукция.\\
+{\bf ПФ}  & --- Полуфабрикат (заготовка).\\
+% {\bf ГОГП}  & --- группа по отпуску готовой продукции.\\
+{\bf ЛГК}, {\bf ГА}, {\bf Г/А}  & --- Гофроагрегат.\\
+% {\bf ДП}  & --- Департамент продаж.\\
+{\bf ЛП}, {\bf ПЛ}  & --- Линия переработки, перерабатывающая линия.\\
+{\bf ТК}  & --- Технологическая карта.\\
+	
+\end{tabular}
+
+
+
+
+
+
+\newcommand*{\IsScancode}{1}  % Если {1}, то соберётся файл с применением ШК
+\newcommand*{\IsOKP}{0}  % Если {1}, нужно ОКП?
+
+
+
+
+\newpage
+
+
+
+% Основные роли
+
+\newcommand{\gofro}{\blue{@ГТ}\xspace}
+\newcommand{\erp}{\blue{@1С:УПП}\xspace}
+\newcommand{\buh}{\blue{@1C:Бухгалтерия}\xspace}
+\newcommand{\syncro}{\blue{@SYNCRO}\xspace}
+\newcommand{\newkuani}{\blue{@Newkuany}\xspace}
+
+
+\newcommand{\manager}{\green{!МенеджерПоПродажам}\xspace}
+\newcommand{\tehnolog}{\green{!Технолог}\xspace}
+\newcommand{\preproductionspecialist}{\green{!Специалист по подготовке производства}\xspace}
+\newcommand{\designer}{\green{!Дизайнер}\xspace}
+\newcommand{\planner}{\green{!Планировщик}\xspace}
+% \newcommand{\montaznik}{\green{!Монтажник}\xspace}
+\newcommand{\operator}{\green{!МашинистЛинии}\xspace}
+\newcommand{\linkoperator}{\green{!ОператорРаската }}
+% \newcommand{\supplier}{\green{!МенеджерПоСнабжению}\xspace}
+\newcommand{\purchase}{\green{!СпециалистПоЗакупкам}\xspace}
+\newcommand{\logistician}{\green{!МенеджерПоЛогистике}\xspace}
+\newcommand{\processengineer}{\green{!ДиректорПоПроизводству}\xspace}
+\newcommand{\auditor}{\green{!Бухгалтер}\xspace}
+\newcommand{\gaoperator}{\green{!МашинистГА}\xspace}
+\newcommand{\kladovshik}{\green{!Кладовщик}\xspace}
+\newcommand{\master}{\green{!МастерСмены}\xspace}
+\newcommand{\driver}{\green{!ВодительПогрузчика}\xspace}
+\newcommand{\director}{\green{!Директор}\xspace}
+\newcommand{\laborant}{\green{!КонтролерПоКачеству}\xspace}
+\newcommand{\okk}{\green{!ОКК}\xspace}
+
+
+
+\newcommand{\myobject}[1]{\blue{\##1}} % для обозначения документов и справочников
+\newcommand{\myform}[1]{\blue{\$#1}} % для обозначения форм и кнопок
+
+
+
+	% документ
+% 	\section{Общие положения}
+  	\input{01_BP/unit_0.tex}
+
+ 	\input{01_BP/unit_1.tex}
+
+ 	\input{01_BP/unit_2.tex}  % схемы
+ 	
+ 	% \input{01_BP/unit_3.tex}  % карта рабочих мест 
+\end{document}
